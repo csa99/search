@@ -29,15 +29,15 @@
                 <h2>이미지검색</h2>
             </div>
             <div data-role="content" data-theme="d">
-                <input type="text" id="txtQuery" value="경태"/>
+                <input type="text" id="txtQuery" value="서강준"/>
                 </br>
-                <ul data-role="listview" id="list" data-theme="d"></ul>
+                <ul data-role="listview" id="list" data-theme="d" style="overflow: hidden; width: 100%; margin-left: 5px;margin-right: 5px;"></ul>
                 <script id="temp" type="text/x-handlebars-template">
-                <div id="box1" style="text-align: center;">
                     {{#each documents}}
+                    <div id="box1" style="margin: 10px;float: left;">
                             <a href="{{image_url}}"><img src="{{thumbnail_url}}"></a>
+                    </div>
                     {{/each}}
-                </div>
                 </script></br> 
                 <input type="button" id="btnMore" value="more"/>    
             </div>
