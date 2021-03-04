@@ -71,6 +71,11 @@
         var size=5;
         getList();
 
+        $("#btnMore").on("click", function(){
+            size+=10;
+            getList();
+        });
+
         function getList(){
         var query=$("#txtQuery").val();
             $.ajax({
