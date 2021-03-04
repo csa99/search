@@ -71,6 +71,11 @@
         var size=5;
         getList();
 
+        $("#txtQuery").on("keydown", function(){
+            page=1;
+            getList();
+        });
+
         $("#btnMore").on("click", function(){
             size+=10;
             getList();
